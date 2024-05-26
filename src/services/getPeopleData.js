@@ -4,7 +4,7 @@ import {
   SWAPI_ROOT,
   URL_IMG_PERSON,
   GUIDE_IMG_EXTENSION
-} from "../constants/api";
+} from "@constants/api";
 
 const getId = (url, category) => {
   const id = url
