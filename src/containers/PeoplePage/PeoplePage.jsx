@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { withErrorApi } from '@hoc-helpers/withErrorApi';
 import PeopleList from '@components/PeoplePage/PeopleList';
 import { changeHTTP, getApiResource } from '@utils/network';
-import { getPeopleId, getPeopleImage, grtPeoplePageId } from '@services/getPeopleData';
+import { getPeopleId, getPeopleImage, getPeoplePageId } from '@services/getPeopleData';
 import { API_PEOPLE } from '@constants/api';
 import { useQueryParams } from '@hooks/useQueryParams';
 import PeopleNavigation from '@components/PeoplePage/PeopleNavigation'
@@ -36,7 +36,7 @@ const PeoplePage = ({ setErrorApi }) => {
       setPeople(peopleList);
       setPrevPage(changeHTTP(res.previous));
       setNextPage(changeHTTP(res.next));
-      setCounterPage(grtPeoplePageId(url));
+      setCounterPage(getPeoplePageId(url));
       setErrorApi(false);
     } else {
       setErrorApi(true);

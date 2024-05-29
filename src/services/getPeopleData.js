@@ -12,7 +12,7 @@ import {
  * @param {String} url - url с которого будем получать номер страницы
  * @returns {Number} - Number(id) - номер страницы
  */
-export const grtPeoplePageId = url => {
+export const getPeoplePageId = url => {
   const pos = url.lastIndexOf(SWAPI_PEOPLE_PAGE);
   const id = url.slice(pos+SWAPI_PEOPLE_PAGE.length, url.length);
 
