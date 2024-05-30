@@ -1,0 +1,19 @@
+.link {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: var(--font-bold);
+    color: var(--color-yellow);
+    text-decoration: none;
+}
+
+.link__img {
+    width: 30px;
+    height: 30px;
+    margin-right: var(--spacing-small);
+    object-fit: cover;
+    object-position: center center;
+
+    filter: invert(100%) opacity(90%);
+}
