@@ -1,19 +1,28 @@
+
+import PropTypes from 'prop-types';
+import React, { useEffect, useState, Suspense } from 'react';
+
+import { withErrorApi } from '@hoc-helpers/withErrorApi';
+
+import PersonPhoto from '@components/PersonPage/PersonPhoto';
+import PersonInfo from '@components/PersonPage/PersonInfo';
+import PersonLinkBack from '@components/PersonPage/PersonLinkBack';
+
+import UiLoading from '@components/UI/UiLoading';
+
+import { getApiResource } from '@utils/network';
+import { getPeopleImage } from '@services/getPeopleData';
+import { API_PERSON } from '@constants/api';
+
 import styles from './PersonPage.module.css';
 
-import { useEffect, useState } from 'react';
-import { getApiResource } from '@utils/network';
-import { API_PERSON } from '@constants/api'
-import { withErrorApi } from '@hoc-helpers/withErrorApi';
-import { getPeopleImage } from '@services/getPeopleData';
-import PersonPhoto from '@components/PersonPage/PersonPhoto'
-import PersonInfo from '@components/PersonPage/PersonInfo'
-import PersonLinkBack from '@components/PersonPage/PersonLinkBack'
-import PropTypes from 'prop-types';
+const PersonFilms = React.lazy(() => import('@components/PersonPage/PersonFilms'));
 
 const PersonPage = ({ setErrorApi }) => {
     const [personInfo, setPersonInfo] = useState(null);
     const [personName, setPersonName] = useState(null);
     const [personPhoto, setPersonPhoto] = useState(null);
+    const [personFilms, setPersonFilms] = useState(null);
 
     useEffect(() => {
 
@@ -41,9 +50,9 @@ const PersonPage = ({ setErrorApi }) => {
                     { title: 'Gender', data: res.gender },
                 ]);
                 setPersonName(res.name);
-                setPersonPhoto(getPeopleImage(id));
+                // setPersonPhoto(getPeopleImage(id)); // нет доступа к сайту - заблокировали TODO: FIXME:
 
-                // res.films (['https://swapi.dev/api/films/1/', 'https://swapi.dev/api/films/5/', 'https://swapi.dev/api/films/6/'])
+                res.films.length && setPersonFilms(res.films)
 
                 setErrorApi(false);
             } else {
@@ -57,6 +66,7 @@ const PersonPage = ({ setErrorApi }) => {
     return (
         <>
             <PersonLinkBack />
+
             <div className={styles.wrapper}>
                 <span className={styles.person__name}>{personName}</span>
 
@@ -66,8 +76,13 @@ const PersonPage = ({ setErrorApi }) => {
                         personName={personName}
                     />
 
-                    {/* personInfo && ( - если данные в personInfo есть то отобразим (на старте приложения там пусто) */}
-                    {personInfo && <PersonInfo personInfo={personInfo} />}
+                    { personInfo && <PersonInfo personInfo={personInfo} /> }
+
+                    { personFilms && (
+                        <Suspense fallback={<UiLoading />}> 
+                            <PersonFilms personFilms={personFilms} />
+                        </Suspense>
+                    )}
                 </div>
             </div>
         </>
