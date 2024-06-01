@@ -1,0 +1,33 @@
+.container {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.counter {
+    position: absolute;
+    top: 0;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: var(--font-size-main);
+    font-weight: var(--font-bold);
+    color: var(--color-black);
+    text-decoration: none;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    box-shadow: var(--text-shadow-white);
+}

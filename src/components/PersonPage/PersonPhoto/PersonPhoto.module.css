@@ -1,4 +1,7 @@
 .container {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 250px;
     height: 350px;
 }
@@ -10,3 +13,16 @@
     object-fit: cover;
     object-position: center center;
 }
+
+.favorite {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 35ps;
+    height: 35px;
+    object-fit: cover;
+    object-position: center center;
+    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+    cursor: pointer;
+}
+
