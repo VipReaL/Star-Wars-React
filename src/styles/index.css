@@ -47,8 +47,16 @@
     0 6px 30px 5px rgba(0, 0, 0, 0.1),
     0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
-  --theme-default-header: #cccc46;
-  --theme-default-bgimage: url(@static/bg.jpg);
+  /* THEMES */
+  --theme-light-header: #dfe2df;
+  --theme-dark-header: #ca676f;
+  --theme-neutral-header: #cccc46;
+  --theme-default-header: var(--theme-neutral-header);
+
+  --theme-light-bgimage: linear-gradient(to right top, #350857, #33185c, #332461, #342e64, #363766);
+  --theme-dark-bgimage: linear-gradient(to right top, #000000, #24090f, #3e0912, #59030e, #710000);
+  --theme-neutral-bgimage: url(@static/bg.jpg);
+  --theme-default-bgimage: var(--theme-neutral-bgimage);
 }
 
 body {

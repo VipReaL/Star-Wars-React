@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    align-items: center;
 }
 
 .list__container a {
@@ -33,4 +34,12 @@
     border: 2px solid var(--color-violet);
     color: var(--color-violet);
     text-shadow: none;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: var(--spacing-large);
+    object-fit: cover;
+    object-position: center center;
 }
