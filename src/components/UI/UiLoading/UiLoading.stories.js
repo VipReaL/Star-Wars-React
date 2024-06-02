@@ -1,4 +1,4 @@
-import UiLoading from './UiLoading'
+import UiLoading from './UiLoading';
 
 export default {
     title: 'Ui-Kit/UiLoading',

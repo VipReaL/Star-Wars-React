@@ -3,6 +3,7 @@ import PeoplePage from '@containers/PeoplePage';
 import PersonPage from '@containers/PersonPage';
 import FavoritesPage from '@containers/FavoritesPage';
 import NotFoundPage from '@containers/NotFoundPage';
+import SearchPage from '@containers/SearchPage';
 
 const routesConfig = [
     {
@@ -24,6 +25,11 @@ const routesConfig = [
         path: '/favorites',
         exact: true,
         element: <FavoritesPage />
+    },
+    {
+        path: '/search',
+        exact: true,
+        element: <SearchPage />
     },
     {
         path: '/not-found',
