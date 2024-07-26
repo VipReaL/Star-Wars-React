@@ -26,8 +26,7 @@ const PeoplePage = ({ setErrorApi }) => {
     if (res) {
       const peopleList = res.results.map(({ name, url }) => {
         const id = getPeopleId(url);
-        //const img = getPeopleImage(id); // нет доступа к сайту - заблокировали TODO: FIXME:
-        const img = 'нет доступа к сайту - заблокировали';
+        const img = getPeopleImage(id); // нет доступа к сайту - заблокировали TODO: FIXME:
         return {
           id: id,
           name: name,

@@ -59,7 +59,7 @@ const PersonPage = ({ setErrorApi }) => {
                     { title: 'Gender', data: res.gender },
                 ]);
                 setPersonName(res.name);
-                // setPersonPhoto(getPeopleImage(id)); // нет доступа к сайту - заблокировали TODO: FIXME:
+                setPersonPhoto(getPeopleImage(id)); // нет доступа к сайту - заблокировали TODO: FIXME:
 
                 res.films.length && setPersonFilms(res.films)
 
