@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72b61f61.css",
+    "main.js": "/static/js/main.f230716c.js",
+    "static/css/152.cdd86d10.chunk.css": "/static/css/152.cdd86d10.chunk.css",
+    "static/js/152.95715699.chunk.js": "/static/js/152.95715699.chunk.js",
+    "static/media/bg.jpg": "/static/media/bg.09dd8a8a68f382cf58dc.jpg",
+    "static/media/falcon.jpg": "/static/media/falcon.c1d0a8d1869b3fbdb9ab.jpg",
+    "static/media/dark-side.jpg": "/static/media/dark-side.e0f8cab78e4bdd7db45d.jpg",
+    "static/media/light-side.jpg": "/static/media/light-side.eebc52171cd4ac0278ca.jpg",
+    "static/media/Favorite-fill.svg": "/static/media/Favorite-fill.00317fbf7cd5e4e75c1d492c55406e0a.svg",
+    "static/media/Favorite.svg": "/static/media/Favorite.fafa61dadf484c7c287cb46d214ee4b9.svg",
+    "static/media/bookmark.svg": "/static/media/bookmark.7b828f21e9adfc918ac1dce1efc97abf.svg",
+    "static/media/404.png": "/static/media/404.1062f5e41ef989b5973a.png",
+    "static/media/lightsaber.svg": "/static/media/lightsaber.eb7d4cd665426117002814db79fceef4.svg",
+    "static/media/space-station.svg": "/static/media/space-station.7a027c6ec10ba7b5d8c880df5f4e65ea.svg",
+    "static/media/droid.svg": "/static/media/droid.de165dd887badb2bdbe9d97b8e527c6f.svg",
+    "static/media/cancel.svg": "/static/media/cancel.1d37b349388167de6bd090b5731bf27e.svg",
+    "static/media/loader-black.svg": "/static/media/loader-black.0f095ae4537e3ee80cb0c6bb2e59f686.svg",
+    "static/media/loader-blue.svg": "/static/media/loader-blue.2ed16bfcbe90ca70aabb5684919fb461.svg",
+    "static/media/loader-white.svg": "/static/media/loader-white.4a66a0814c9b694c86324be5a77996e4.svg",
+    "index.html": "/index.html",
+    "main.72b61f61.css.map": "/static/css/main.72b61f61.css.map",
+    "main.f230716c.js.map": "/static/js/main.f230716c.js.map",
+    "152.cdd86d10.chunk.css.map": "/static/css/152.cdd86d10.chunk.css.map",
+    "152.95715699.chunk.js.map": "/static/js/152.95715699.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72b61f61.css",
+    "static/js/main.f230716c.js"
+  ]
+}
