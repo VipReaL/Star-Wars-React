@@ -1,6 +1,7 @@
 {
   "name": "react-star-war",
   "version": "0.1.0",
+  "homepage": "https://vipreal.github.io/Star-Wars-React/",
   "private": true,
   "dependencies": {
     "classnames": "^2.5.1",
