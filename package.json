@@ -20,9 +20,13 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "eject": "react-scripts eject",
+    
+    "build-storybook": "storybook build -o ./build/storybook",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "deploy": "gh-pages -d build"
+
+    "build-gh-pages": "gh-pages -d build",
+
+    "deploy": "npm run build && npm run build-storybook && npm run build-gh-pages"
   },
   "eslintConfig": {
     "extends": [
