@@ -1,0 +1,66 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-light-gray: #dfe2df;
+    --color-gray: #9c9c9c;
+    --color-blue: #6a83fb;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-family-main: sans-serif;
+    --font-bold: 600;
+    --transition: .4s;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+.UiInput_wrapper__input__62Ww9 {
+    --border-radius: 3px;
+    --border: 3px;
+    --clear-width: 35px;
+}
+
+.UiInput_wrapper__input__62Ww9 {
+    position: relative;
+    display: inline-flex;
+}
+
+.UiInput_input__IgVx0 {
+    min-width: 300px;
+    padding: 10px 15px;
+    padding-right: calc(var(--clear-width) + 15px);
+    border: var(--border) solid;
+    border-color: var(--color-light-gray);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-medium);
+    font-family: var(--font-family-main);
+    outline: none;
+}
+
+.UiInput_input__IgVx0:focus {
+    border-color: var(--color-blue);
+}
+
+.UiInput_clear__OLezJ {
+    position: absolute;
+    top: var(--border);
+    right: var(--border);
+    width: var(--clear-width);
+    height: calc(100% - var(--border)*2);
+    padding: 10px;
+    object-fit: contain;
+    object-position: center center;
+    transition: .5s;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.UiInput_clear__disabled__5Akg0 {
+    opacity: .2;
+}
+
+/*# sourceMappingURL=components-UI-UiInput-UiInput-stories.4a23ac7b.chunk.css.map*/

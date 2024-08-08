@@ -1,0 +1,69 @@
+.UiButton_button__gkycH {
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 3px;
+
+    font-size: var(--font-size-small);
+    font-family: var(--font-family-main);
+    font-weight: var(--font-bold);
+
+    background: none;
+    outline: none;
+
+    transition: var(--transition);
+
+    cursor: pointer;
+}
+
+.UiButton_button__gkycH:disabled,
+.UiButton_button__gkycH:disabled:hover {
+    color: var(--color-gray);
+    background-color: transparent;
+    border-color: var(--color-gray);
+    cursor: auto;
+}
+
+.UiButton_dark__Oo-kM {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+
+}
+
+.UiButton_dark__Oo-kM:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+
+}
+
+.UiButton_light__ACEoD {
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+}
+
+.UiButton_light__ACEoD:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+}
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-light-gray: #dfe2df;
+    --color-gray: #9c9c9c;
+    --color-blue: #6a83fb;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-family-main: sans-serif;
+    --font-bold: 600;
+    --transition: .4s;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/*# sourceMappingURL=components-UI-UiButton-UiButton-stories.6a34a62c.chunk.css.map*/
