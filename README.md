@@ -1,6 +1,6 @@
 # Проект Star Wars 🪐
 
-[Посмотреть проект Star Wars 🪐](https://vipreal.github.io/Star-Wars-React/)
+[Посмотреть проект Star Wars 🪐](https://vipreal.github.io/Star-Wars-React/)  
 [Посмотреть storybook проектa Star Wars 🪐](https://vipreal.github.io/Star-Wars-React/storybook)
 
 - На главной странице реализована возможность выбора темы со сменой фона и цвета текста
