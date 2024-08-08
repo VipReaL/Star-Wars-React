@@ -1,31 +1,19 @@
-# 🪐 Star Wars Application
-# 🐶 Available Scripts and Commands
-```bash
-# Install
-npm i                    # install dependencies
-```
-```bash
-# General
-npm run start            # run app in the development mode
-npm run storybook        # run storybook
-npm run deploy           # deploy app on Github Pages
-```
-```bash
-# Deploy (part of "deploy" script)
-npm run build            # builds the app for production
-npm run build-storybook  # storybook build
-npm run build-gh-pages   # deploy on Github Pages
-```
-```bash
-# Not used
-npm run eject            # remove the single build dependency
-npm run deploy-storybook # storybook deploy
-```
-# 🦄 API
+# Проект Star Wars 🪐
+
+[Посмотреть проект Star Wars 🪐.]()
+
+- На главной странице реализована возможность выбора темы со сменой фона и цвета текста
+- На странице Персонажи выводится список ключевых персонажей вселенной звёздных войн, можно просматривать подробную статистику и добавлять в избранное.
+- Реализован поиск по персонажам
+- Реализована страница not-found
+- Реализована страница fail
+
+# ⛓️‍💥 Использованы API
 - https://swapi.dev (основное API)
 - https://swapi.py4e.com (запасное API - если основное не работает)
 - https://starwars-visualguide.com (изображения для API)
-# 🐼 Использованы технологии
+
+# ⚙️ Использованы технологии
 ## React.js
 - Разворачивание приложения с create-react-app
 - Состояние компонента (хук useState)
@@ -74,7 +62,7 @@ npm run deploy-storybook # storybook deploy
 - CSS Multi Columns
 - Стилизация скроллбара
 ## Технологии
-- TypeScript https://github.com/letscode-dev/react-star-wars/tree/typescript-part
+- TypeScript
 - Firebase регистрация
 - Material UI, стилизация через css-in-js
 - Redux Thunk
@@ -82,6 +70,30 @@ npm run deploy-storybook # storybook deploy
 ## Функционал
 - Роутер. Анимация при переходе между страницами
 - Добавить шрифты
+
+# 🛠 Установка и запуск
+```bash
+# Установка
+npm i                    # установка зависимостей
+```
+```bash
+# Основные команды
+npm run start            # запустить приложение в режиме разработки
+npm run storybook        # запустить storybook
+npm run deploy           # развернуть приложение в Github Pages
+```
+```bash
+# Deploy
+npm run build            # builds the app for production
+npm run build-storybook  # storybook build
+npm run build-gh-pages   # deploy on Github Pages
+```
+```bash
+# Not used
+npm run eject            # remove the single build dependency
+npm run deploy-storybook # storybook deploy
+```
+
 ## NPM
 ```bash
 npm i --save classnames lodash prop-types react react-dom react-redux react-router react-router-dom react-scripts redux redux-devtools-extension redux-thunk

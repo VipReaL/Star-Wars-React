@@ -18,8 +18,11 @@ const Favorite = () => {
     return (
         <div className={styles.container}>
             <Link to="/favorites" >
-                <span className={styles.counter}>{count}</span>
-                <img className={styles.icon} src={icon} alt='Favorite' />
+                <div className={styles.content}>
+                    <span className={styles.text}>Избранное</span>
+                    <span className={styles.counter}>{count}</span>
+                    <img className={styles.icon} src={icon} alt='Favorite' />
+                </div>
             </Link>
         </div>
     )

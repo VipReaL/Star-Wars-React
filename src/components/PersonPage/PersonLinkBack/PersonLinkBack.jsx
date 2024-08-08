@@ -20,7 +20,7 @@ const PersonLinkBack = () => {
             className={styles.link}
         >   
             <img className={styles.link__img} src={iconBack} alt='Назад' />
-            <span>Go back</span>
+            <span>Назад</span>
         </a>
     )
 }

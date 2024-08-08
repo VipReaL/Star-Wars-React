@@ -29,19 +29,23 @@ const Header = () => {
             <ul className={styles.list__container}>
                 <img className={styles.logo} src={icon} alt='Logo' />
                 <li>
-                    <NavLink to="/" >Home</NavLink>
+                    <NavLink to="/" >Главная</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/people/?page=1" >People</NavLink>
+                    <NavLink to="/people/?page=1" >Персонажи</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/search" >Поиск</NavLink>
                 </li>
                 <li>
                     <NavLink to="/not-found" >Not Found</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/search" >Search</NavLink>
+                    <NavLink to="/fail">Fail</NavLink>
                 </li>
-                <Favorite />
             </ul>
+
+            <Favorite />
         </div>
     )
 }

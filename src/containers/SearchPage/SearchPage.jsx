@@ -52,12 +52,12 @@ const SearchPage = ({ setErrorApi }) => {
 
     return (
         <>
-            <h1 className='header__text'>Search</h1>
+            <h1 className='header__text'>Поиск</h1>
 
             <UiInput 
                 value={inputSearchValue}
                 handleInputChange={handleInputChange}
-                placeholder="Input characters's name"
+                placeholder="Введите имя персонажа"
                 classes={styles.input__search}
             />
 

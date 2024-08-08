@@ -11,8 +11,8 @@ const NotFoundPage = () => {
     return (
         <>
             <img className={styles.img} src={img} alt="Not Found" />
-            <p className={styles.text}>No match for</p>
-            <ul className={styles.text}>{location.pathname}</ul>
+            <p className={styles.text}>No match for <u>{location.pathname}</u></p>
+            
         </>
     )
 }

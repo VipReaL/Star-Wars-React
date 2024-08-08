@@ -24,10 +24,10 @@ const FavoritesPage = () => {
 
     return (
         <>
-            <h1 className='header__text'>Favorites Page</h1>
+            <h1 className='header__text'>Избранное</h1>
             {people.length
                 ? <PeopleList people={people} />
-                : <h2 className={styles.comment}>No data</h2>
+                : <h2 className={styles.comment}>Никто из персонажей не добавлен в избранное</h2>
             }
         </>
     )

@@ -1,10 +1,16 @@
 .container {
-    width: 35px;
-    height: 35px;
     margin-left: auto;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    align-items: center;
     position: relative;
-    top: 0;
-    left: 0;
+    text-decoration: none;
 }
 
 .icon {
@@ -16,8 +22,8 @@
 
 .counter {
     position: absolute;
-    top: 0;
-    right: -25px;
+    top: -8px;
+    right: -6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,4 +36,15 @@
     background-color: var(--color-white);
     border-radius: 50%;
     box-shadow: var(--text-shadow-white);
+}
+
+.text {
+    color: var(--color-white);
+    text-align: center;
+    font-family: var(--font-family-main);
+    text-decoration: none;
+    font-weight: var(--font-bold);
+    text-shadow: var(--text-shadow-yellow);
+    cursor: pointer;
+    padding-inline-end: 15px;
 }
